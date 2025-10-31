@@ -10,7 +10,7 @@ class CfgAddons
 {
     class PreloadAddons
     {
-        class ModTemplate
+        class CookCrafter
         {
             list[]={};
         };
@@ -19,15 +19,15 @@ class CfgAddons
 
 class CfgMods
 {
-    class ModTemplate
+    class CookCrafter
     {
-        name="";
-        dir="ModTemplate";
+        name="CookCrafter";
+        dir="CookCrafter";
         picture="";
         action="";
-        author="";
+        author="Kares";
         overview = "";
-		inputs = "ModTemplate/Scripts/Inputs.xml";
+		inputs = "CookCrafter/Scripts/Inputs.xml";
 		type = "mod";
         defines[] = {};
 		dependencies[] =
@@ -48,21 +48,25 @@ class CfgMods
 
 			class engineScriptModule 
 			{ 
-				files[] = { "ModTemplate/Scripts/1_Core"};
+				files[] = { "CookCrafter/Scripts/1_Core"};
 			};
 
 			class gameScriptModule
 			{
-				files[] = { "ModTemplate/Scripts/3_Game" };
+				files[] = { 
+					"CookCrafter/Scripts/3_Game"
+				};
 			};
 			class worldScriptModule
 			{
-				files[] = { "ModTemplate/Scripts/4_World" };
+				files[] = { "CookCrafter/Scripts/4_World" };
 			};
 
 			class missionScriptModule 
 			{
-				files[] = { "ModTemplate/Scripts/5_Mission" };
+				files[] = { 
+					"CookCrafter/Scripts/5_Mission"
+				};
 			};
 		};
     };

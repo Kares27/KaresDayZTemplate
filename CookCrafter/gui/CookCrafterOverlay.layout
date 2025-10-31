@@ -1,0 +1,120 @@
+FrameWidgetClass CookCrafterFrame {
+    visible 0
+    clipchildren 0
+    ignorepointer 0
+    canfocus 1
+    position 0 0
+    size 1 1
+    halign center_ref
+    valign center_ref
+    hexactsize 0
+    vexactsize 0
+    priority 1000
+    {
+        PanelWidgetClass DialogPanel {
+            visible 1
+            focusable 1
+            canfocus 1
+            ignorepointer 0
+            clipchildren 1
+            color 0.1176 0.1176 0.1176 0.9804
+            position 300 125
+            size 600 250
+            halign left_ref
+            valign top_ref
+            hexactpos 1
+            vexactpos 1
+            hexactsize 1
+            vexactsize 1
+            style Colorable
+            {
+                TextWidgetClass Caption {
+                    visible 1
+                    position 0 20
+                    size 600 40
+                    halign left_ref
+                    valign top_ref
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "You completed a jump!"
+                    font "gui/fonts/sdf_MetronBook72"
+                    "exact text" 1
+                    "exact text size" 32
+                    "text halign" center
+                    "text valign" center
+                }
+                PanelWidgetClass SeparatorPanel {
+                    visible 1
+                    color 0.7569 0.0941 0.0941 0.7843
+                    position 30 70
+                    size 540 3
+                    halign left_ref
+                    valign top_ref
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    style rover_sim_colorable
+                }
+                RichTextWidgetClass MessageText {
+                    visible 1
+                    clipchildren 1
+                    color 1 1 1 1
+                    position 30 90
+                    size 540 80
+                    halign left_ref
+                    valign top_ref
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "Great jump! Press ESC or click X to close."
+                    font "gui/fonts/sdf_MetronLight24"
+                    "exact text" 1
+                    "exact text size" 20
+                    "text halign" center
+                    "text valign" center
+                    wrap 1
+                }
+                ButtonWidgetClass CloseButton {
+                    visible 1
+                    inheritalpha 0
+                    focusable 1
+                    color 1 0 0 1
+                    position 250 180
+                    size 100 35
+                    halign left_ref
+                    valign top_ref
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    style EmptyHighlight
+                    text "Close"
+                    text_proportion 0.5
+                    font "gui/fonts/sdf_MetronBook24"
+                }
+                ButtonWidgetClass CloseButtonX {
+                    visible 1
+                    inheritalpha 0
+                    focusable 1
+                    color 1 0 0 0.8
+                    position 550 5
+                    size 40 30
+                    halign left_ref
+                    valign top_ref
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    style EmptyHighlight
+                    text "X"
+                    text_proportion 0.5
+                    font "gui/fonts/sdf_MetronBook24"
+                }
+            }
+        }
+    }
+}
